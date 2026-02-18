@@ -1,0 +1,37 @@
+"""
+Day 2 - Conditional Statements
+Author: Shravani
+Topic: if, elif, else
+Description: Practice decision-making using conditional statements.
+"""
+
+age = int(input("Enter your age: "))
+country = input("Enter your country: ").lower()
+
+print("\n--- Eligibility Results ---")
+
+# Voting eligibility (India example)
+if age >= 18 and country == "india":
+    print("You are eligible to vote in India.")
+elif age >= 18:
+    print("You are eligible to vote in your country.")
+else:
+    print("You are not eligible to vote yet.")
+
+# Driving eligibility
+if age >= 18:
+    print("You are eligible for a driving license.")
+else:
+    print("You are not eligible for a driving license.")
+
+# Age category classification
+if age < 13:
+    category = "Child"
+elif age < 20:
+    category = "Teenager"
+elif age < 60:
+    category = "Adult"
+else:
+    category = "Senior Citizen"
+
+print(f"Age Category: {category}")
