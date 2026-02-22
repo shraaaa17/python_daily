@@ -1,0 +1,36 @@
+"""
+Day 4 - Lists Practice
+Author: Shravani
+Topic: Lists and List Operations
+Description: Practice creating and manipulating lists.
+"""
+
+# Creating a list
+numbers = [10, 20, 30, 40, 50]
+
+print("Original List:", numbers)
+
+# Accessing elements
+print("First element:", numbers[0])
+print("Last element:", numbers[-1])
+
+# Adding elements
+numbers.append(60)
+print("After append:", numbers)
+
+# Removing elements
+numbers.remove(20)
+print("After removing 20:", numbers)
+
+# List slicing
+print("First three elements:", numbers[:3])
+
+# Looping through list
+print("All elements:")
+for num in numbers:
+    print(num)
+
+# List operations
+print("Sum:", sum(numbers))
+print("Maximum:", max(numbers))
+print("Minimum:", min(numbers))
