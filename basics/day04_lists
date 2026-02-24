@@ -34,3 +34,15 @@ for num in numbers:
 print("Sum:", sum(numbers))
 print("Maximum:", max(numbers))
 print("Minimum:", min(numbers))
+
+# Day 4 – Lists
+
+## Concepts Learned
+- Creating lists
+- Indexing and slicing
+- append() and remove()
+- Looping through lists
+- Built-in functions like sum(), max(), min()
+
+## Reflection
+Today I practiced manipulating lists, which are fundamental for data structures and algorithms.
