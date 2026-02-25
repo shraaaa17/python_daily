@@ -1,0 +1,37 @@
+"""
+Day 6 - Dictionaries and Sets
+Author: Shravani
+Topic: Dictionary and Set operations
+Description: Practice key-value storage and unique collections.
+"""
+
+# Creating a dictionary
+student = {
+    "name": "Shravani",
+    "age": 21,
+    "branch": "Engineering"
+}
+
+print("--- Student Information ---")
+print("Name:", student["name"])
+print("Age:", student["age"])
+
+# Adding new key-value pair
+student["grade"] = "A"
+print("Updated Dictionary:", student)
+
+# Updating value
+student["age"] = 22
+print("Updated Age:", student["age"])
+
+# Looping through dictionary
+print("\nDictionary Contents:")
+for key, value in student.items():
+    print(f"{key} : {value}")
+
+# Working with sets
+numbers = [1, 2, 2, 3, 4, 4, 5]
+unique_numbers = set(numbers)
+
+print("\nOriginal List:", numbers)
+print("Unique Values (Set):", unique_numbers)
