@@ -1,0 +1,33 @@
+"""
+Day 7 - Functions
+Author: Shravani
+Topic: Creating and using functions
+Description: Practice writing reusable functions in Python.
+"""
+
+def greet_user(name):
+    """Returns a greeting message."""
+    return f"Hello, {name}! Welcome to Python practice."
+
+
+def calculate_square(number):
+    """Returns square of a number."""
+    return number * number
+
+
+def check_even(number):
+    """Checks whether a number is even or odd."""
+    if number % 2 == 0:
+        return "Even"
+    else:
+        return "Odd"
+
+
+# Taking input
+name = input("Enter your name: ")
+num = int(input("Enter a number: "))
+
+# Calling functions
+print(greet_user(name))
+print("Square:", calculate_square(num))
+print("Number is:", check_even(num))
