@@ -1,0 +1,31 @@
+"""
+Day 8 - Reverse a Number
+Author: Shravani
+Topic: Logic building using loops
+Description: Reverse digits of a number using while loop.
+"""
+
+num = int(input("Enter a number: "))
+original = num
+reversed_num = 0
+
+while num > 0:
+    digit = num % 10
+    reversed_num = reversed_num * 10 + digit
+    num = num // 10
+
+print(f"Original Number: {original}")
+print(f"Reversed Number: {reversed_num}")
+
+
+# # Day 8 – Reverse a Number
+
+# ## Concepts Learned
+# - Using while loop for digit extraction
+# - Modulus operator (%) to get last digit
+# - Integer division (//) to remove last digit
+# - Building a new number step-by-step
+
+# ## Reflection
+# Today I practiced number manipulation logic,
+# which is common in coding interviews.
