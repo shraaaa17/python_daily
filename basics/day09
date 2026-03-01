@@ -1,0 +1,25 @@
+"""
+Day 9 - Palindrome String
+Author: Shravani
+Topic: String logic and comparison
+Description: Check if a string is a palindrome.
+"""
+
+text = input("Enter a word or sentence: ")
+
+# Normalize input
+cleaned_text = text.lower().replace(" ", "")
+
+# Reverse string using slicing
+reversed_text = cleaned_text[::-1]
+
+print("\n--- Palindrome Check ---")
+
+if cleaned_text == reversed_text:
+    print("It is a palindrome.")
+else:
+    print("It is not a palindrome.")
+
+print("Original:", text)
+print("Processed:", cleaned_text)
+print("Reversed:", reversed_text)
