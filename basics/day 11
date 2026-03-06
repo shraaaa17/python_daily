@@ -1,0 +1,19 @@
+"""
+Day 11 - Fibonacci Series
+Author: Shravani
+Topic: Fibonacci sequence using loops
+Description: Generate Fibonacci numbers up to N terms.
+"""
+
+n = int(input("Enter number of terms: "))
+
+a = 0
+b = 1
+
+print("\nFibonacci Series:")
+
+for i in range(n):
+    print(a, end=" ")
+    next_num = a + b
+    a = b
+    b = next_num
