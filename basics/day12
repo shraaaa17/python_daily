@@ -1,0 +1,17 @@
+"""
+Day 12 - Count Vowels
+Author: Shravani
+Topic: String processing
+Description: Count vowels in a given sentence.
+"""
+
+text = input("Enter a sentence: ")
+
+vowels = "aeiou"
+count = 0
+
+for char in text.lower():
+    if char in vowels:
+        count += 1
+
+print("\nNumber of vowels:", count)
